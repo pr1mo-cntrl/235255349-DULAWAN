@@ -1,5 +1,7 @@
 body {
-    font-family: "Raleway", sans-seriff !important;
+    font-family: 'Roboto Slab', sans;
+    color: white;
+    background-color: #68BDCA;
 }
 
 ul {
@@ -11,7 +13,7 @@ a {
 }
 
 h1 {
-    color: #ff6363;
+    color: #2980B9;
     font-weight: bold;
 }
 
