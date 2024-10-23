@@ -1,0 +1,23 @@
+#nav-bar {
+    position: fixed;
+    top: 0;
+}
+ul {
+    margin: 75px;
+}
+li {
+    display: inline-block;
+    
+}
+@media only screen and (mid-width: 200px) {
+    #header {
+        background-color: #00beef;
+    }
+}
+.flex {
+    display: flex;
+}
+
+.section {
+    margin: 10;
+}
