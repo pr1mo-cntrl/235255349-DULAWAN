@@ -15,14 +15,14 @@
         <input placeholder="email" id="email" type="email" required/>
       </div>
       <div class="input-element">
-        <label id="select-label">
-          Who's your favorite team?
-        </label>
-        <input placeholder id="age" min="8" max="100" type="number" required/>
-      </div>
-      <div class="input-element">
         <label id="number-label">
           Age
+        </label>
+        <input placeholder="age" id="age" min="8" max="100" type="number" required/>
+      </div>
+      <div class="input-element">
+        <label id="select-label">
+          Who's your favorite team?
         </label>
         <select id="dropdown">
             <option>Warriors</option>
@@ -32,8 +32,27 @@
       </div>
       <div>
         <label>Have you had been to a game before?</label>
+        <div>
         <label><input type="radio" name="game"/>Yes</label>
+      </div>
+      <div>
         <label><input type="radio" name="game"/>No</label>
+       </div>
+      </div>
+      <div>
+        <label>Which suggestions are good ideas for the NBA to implement?</label>
+        <div>
+        <label><input type="checkbox" name="ideas"/>Play in game</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="ideas"/>Cheaper tickets</label>
+       </div>
+       <label><input type="checkbox" name="ideas"/>Cheaper food</label>
+       </div>
+       <label><input type="checkbox" name="ideas"/>Less ref calls</label>
+       </div>
+       <label><input type="checkbox" name="ideas"/>Super teams</label>
+       </div>
       </div>
       
 </form>
