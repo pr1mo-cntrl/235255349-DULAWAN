@@ -11,7 +11,7 @@ li {
 }
 @media only screen and (mid-width: 200px) {
     #header {
-        background-color: #00beef;
+        background-color: lightseagreen;
     }
 }
 .flex {
