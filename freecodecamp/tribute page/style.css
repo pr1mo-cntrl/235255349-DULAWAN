@@ -1,5 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #552583, #FDB927);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#main {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-out;
+}
+
+#title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #FDB927;
+    text-shadow: 2px 2px 5px #552583;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: glow 1.5s infinite alternate;
+    border-bottom: 2px solid #552583;
+    padding-bottom: 5px;
+}
+
+#img-div {
+    margin: 20px 0;
+    position: relative;
+}
+
 #image {
-    display: block;
     max-width: 100%;
     height: auto;
+    border: 5px solid #FDB927;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #FDB927;
+    text-shadow: 1px 1px 3px #000;
+}
+
+
+#tribute-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #fff;
+}
+
+#tribute-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #FDB927, #552583); /* Gold to Purple Gradient */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tribute-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #FDB927, 0 0 10px #552583, 0 0 20px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 15px #FDB927, 0 0 30px #552583, 0 0 40px #FFD700;
+    }
 }
