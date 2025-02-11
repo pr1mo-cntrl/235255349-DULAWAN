@@ -1,18 +1,19 @@
-body {
-    font-family: 'Poppins', sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
     background: #fff;
-    box-shadow: 0 4px 6px rgba (0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -20,11 +21,12 @@ header {
 
 .logo {
     font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
 nav ul li {
@@ -37,84 +39,104 @@ nav ul li a {
     font-weight: 500;
 }
 
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.login {
-    color:#333;
-}
-
-.signup {
-    background: #007bff;
-    color: white;
-}
-
 .menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
 
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 5%;
     flex-wrap: wrap;
+    background: #f8f9fa;
 }
 
-
-.hero-text {
+.hero-content {
     flex: 1;
     max-width: 500px;
 }
 
-
-.hero-text h1 {
+.hero-content h1 {
     font-size: 2.5rem;
 }
 
-.hero-text p {
+.hero-content p {
     margin: 15px 0;
     font-size: 1.1rem;
     color: #666;
 }
 
-.cta button {
-    background: #FF4C61;
+/* Call-to-Action Button */
+.cta-button {
+    background: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     display: inline-block;
     border-radius: 5px;
     margin-top: 10px;
-}
-
-.signin-text {
-    margin-top: 10px;
-    font-size: 0.9rem;
+    transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #d93c51;
+    background: #0056b3;
 }
 
+/* Services */
+.services {
+    text-align: center;
+    padding: 60px 5%;
+}
 
-.hero-image img {
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.contact form {
     max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
+.contact textarea {
+    height: 100px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -127,10 +149,6 @@ nav ul li a {
         display: none;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .menu-toggle {
         display: block;
     }
@@ -140,11 +158,11 @@ nav ul li a {
         text-align: center;
     }
 
-    .hero-text {
+    .hero-content {
         max-width: 100%;
     }
 
-    .hero-text h1 {
+    .hero-content h1 {
         font-size: 2rem;
     }
 
