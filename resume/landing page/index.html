@@ -11,28 +11,58 @@
     <body>
 
         <header>
-            <div class="logo">📦</div>
+            <div class="logo">SuperBook📦</div>
             <nav>
                 <ul>
-                    <li><a href="#">March books</a></li>
-                    <li><a href="#">All books</a></li>
-                    <li><a href="#">How it works</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
-                <a href="#" class="login">Log in</a>
-                <a href="#" class="signup">Sign up</a>
-            </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </header>
 
-        <section class="hero">
-            <div class="hero-text">
+        <section id="home" class="hero">
+            <div class="hero-content">
                 <h1>Discover your next read</h1>
                 <p>Pick a book from a curated list of cool new reads a month. We'll deliver it. You'll love it. It's that simple.</p>
-                <a href="signup.html" class="cta-button">Sign up</a>
-                <p class="signin-text">Already a member? <a href="login.html">Sign in.</a></p>
+                <a href="contact" class="cta-button">Get Started</a>
             </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About us</h2>
+            <p>SuperBook📦 is a top library in your own hands.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <img src="https://www.infront.com/wp-content/uploads/2021/07/web-design-services-1024x425.jpg" alt="Marketing">
+                    <h3>Marketing Strategies</h3>
+                    <p>Boost your brand with effective digital marketing campaigns.</p>
+                </div>
+                
+                <div class="service">
+                    <img src="https://www.infront.com/wp-content/uploads/2021/07/web-design-services-1024x425.jpg" alt="Development">
+                    <h3>Barrow Books</h3>
+                    <p>Rent books via the internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+
             <div class="hero-image">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyBRwcmzFAl6PKiy9LXPOcGjfFOBUpNe5KP9naVD6KMODq1ekd" alt="background">
             </div>
