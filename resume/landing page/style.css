@@ -57,6 +57,11 @@ nav ul li a {
     color: white;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 .hero {
     display: flex;
@@ -73,7 +78,7 @@ nav ul li a {
 }
 
 
-.hero h1 {
+.hero-text h1 {
     font-size: 2.5rem;
 }
 
@@ -95,6 +100,10 @@ nav ul li a {
     margin-top: 10px;
 }
 
+.signin-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
 
 .cta-button:hover {
     background: #d93c51;
@@ -107,17 +116,40 @@ nav ul li a {
 
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero-image img {
-        max-width: 300px;
-        margin-top: 20px;
+    .hero-text {
+        max-width: 100%;
     }
 
-    nav ul {
-        display: none;
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
     }
 }
